@@ -1,1 +1,62 @@
 /* Ini CSS */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url("https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav>a{
+    border: 1px solid black;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.banner-img{
+    height: 320px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQWuOmEvcfowXMz0fyD8GuP1wDhp2Yy9keA&s");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content-header{
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    gap: 24px;
+}
+
+.main-item{
+    flex: 1;
+}
+
+form{
+    background-color: azure;
+}
+
+.our-package{
+    margin-top: 24px;
+    padding: 64px 0;
+    background-color: azure;
+    text-align: center;
+}
+
+footer{
+    margin-top: 24px; 
+    text-align: center;
+}
