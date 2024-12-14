@@ -3,53 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travelabi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="main-header">
-        <div class="home-icon"></div>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Our Package</a>
-            <a href="">Call Us</a>
-        </nav>
+      <div class="home-icon"></div>
+      <nav>
+        <a href="" class="active">Home</a>
+        <a href="">Our Package</a>
+        <a href="">Call Us</a>
+      </nav>
     </header>
-    <hr/>
+    <!-- <hr /> -->
 
     <main>
-        <header class="main-content-header">
-            <h1>Your Trusted Travel Agent</h1>
-            <h3>Yor Happiness is Our Hapiness</h3>
-        </header>
+      <header class="main-content-header">
+        <h1><span>Travelabi, </span>Your Trusted Travel Agent</h1>
+        <p>Your Happiness is Our Hapiness. Let us take care of the details, so you can focus on creating moments of joy and discovery</h>
+        <br>
+        <button>Get Started</button>
+      </header>
 
-        <!-- Main Content -->
-        <section class="main-container">
-            <!-- Banner autoslider -->
-            <aside class="main-item">
-                <div class="banner-img">
+      <!-- Main Content -->
+      <section class="main-container">
+        <!-- Banner autoslider -->
+        <aside class="main-item banner">
+          <div class="banner-img"></div>
+        </aside>
 
+        <!-- Form Contact Us -->
+        <form class="main-item form">
+            <h3>Contact Us</h3>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami diterima</p>
+            
+            <div class="form-item">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-input" type="text" id="name" placeholder="First and last name">
+            </div>
+
+            <div class="form-item">
+                <label class="form-label" for="email">Email Adress</label>
+                <input class="form-input" type="email" id="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-item">
+                <label class="form-label" for="email">What are you interested in?</label>
+                <select class="form-input" name="interest" id="">
+                    <option value="option" selected disabled>Select Option</option>
+                    <option value="tour">Tour</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="car">Car</option>
+                </select>
+            </div>
+            
+            <button class="form-button" type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Our Services -->
+     <section class="service-section">
+        <h1>Our Services</h1>
+        <div class="service-box">
+            <div class="service-item">
+                <div class="service-icon">1</div>
+                <div class="details">
+                    <h4>First Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            </aside>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">2</div>
+                <div class="details">
+                    <h4>Second Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">3</div>
+                <div class="details">
+                    <h4>Third Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+     </section>
 
-            <!-- Form Contact Us -->
-             <form class="main-item">
+    <!-- Testimonial -->
+    <section class="testi-section">
+        <h1>Testimoni</h1>
+        <div class="container-testimonial">
+            <p class="testi-item">"Liburan jadi menyenangkan dengan Travelabi."</p>
+            <div class="testi-profile">
+                <div class="avatar"></div>
+                <div class="profile">
+                    <h4>Florence Hughes</h4>
+                    <span>Ibu Rumah Tangga, 28</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-             </form>
-        </section>
-
-        <!-- Our Package -->
-        <section id="our-package-section">
-            <header class="content-header our-package">
-                <h1>Our Package</h1>
-            </header>
-        </section>
+      <!-- Our Package -->
+      <section id="our-package-section">
+        <header class="content-header our-package">
+          <h1>Our Package</h1>
+        </header>
+      </section>
     </main>
 
     <footer>
-        <span>Made by AbiR@2024</span>
+      <span>Made by AbiR@2024</span>
     </footer>
-
 
     <script src="js/script.js"></script>
   </body>
