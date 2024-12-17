@@ -20,7 +20,7 @@ body{
 .home-icon {
     height: 50px;
     width: 50px;
-    background-image: url("https://w7.pngwing.com/pngs/386/732/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane.png");
+    background-image: url("../assets/travelabi.png");
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -54,7 +54,7 @@ nav>a:hover{
     color: #4335A7;
 }
 
-.main-content-header button{
+button{
     background-color: #4335A7;
     color: white;
     margin-top: 24px;
@@ -92,7 +92,7 @@ nav>a:hover{
 .form {
     flex: 1;
     padding: 0 16px;
-    background-color: rgb(154, 156, 156, 0.2);
+    background-color: rgb(154, 156, 156, 0.1);
     border-radius: 12px;
 }
 
@@ -145,25 +145,28 @@ nav>a:hover{
 .service-item{
     display: flex;
     flex: 1;
-    align-items: center;
+    align-items: center;    
     gap: 12px;
-    background-color: rgb(154, 156, 156, 0.2);
+    background-color: rgb(154, 156, 156, 0.1);
     padding: 24px;
     border-radius: 12px;
     display: flex;
 }
 
-.service-icon{
-    padding: 20px;
-    color: white;
+.service-icon>h3{
+    padding: 12px;
+    width: 50px; 
+    background-color: rgb(66, 53, 167, 1);
+    border-radius: 6px;
+    text-align: center;
     font-weight: bold;
-    background-color: #4335A7;
-    border-radius: 50%;
+    color: white;
 }
 
 .details h4{
-    margin: 0;
+    margin-top: 8px;
     font-size: 16px;
+    margin-bottom: -10px;
 }
 
 .testi-section{
@@ -220,15 +223,77 @@ nav>a:hover{
     color: #bbb9b9; 
 }
 
-.our-package{
-    /* margin: 12px; */
-    margin-top: 0;
-    padding: 64px 0;
-    background-color: rgb(154, 156, 156, 0.2);
+.package-section{
+    background-color: rgb(154, 156, 156, 0.1);
+}
+
+.package-header{
     text-align: center;
+    padding-top: 24px;
+}
+
+.package-container{
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.package-item{
+    display: flex;
+    flex: 1;
+    align-items: center;    
+    gap: 12px;
+    padding: 24px;
+    display: flex;
+
+}
+
+.package-item h4, 
+.package-item p {
+    margin: 4px;
+}
+
+.package-icon>img{
+    padding: 12px;
+    width: 50px; 
+    background-color: rgba(66, 53, 167, 0.295);
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.callus-container{
+    margin: 12px 24px;
+    display: flex;
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.image-callus{
+    flex: 1;
+}
+
+.text-callus{
+    flex: 2;
+}
+
+.text-callus p{
+    line-height: 24px;
+}
+
+.callus-item img{
+    width: 100%;
+    border-radius: 12px;
 }
 
 footer{
+    background-color: #4335A7;
+    color: #ffffff;
+    padding: 12px 24px;
     margin-top: 24px; 
     text-align: center;
 }
