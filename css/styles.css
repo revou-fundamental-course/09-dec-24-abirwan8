@@ -146,22 +146,26 @@ button {
   text-align: center;
 }
 
-.service-box {
+.service-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 16px;
   flex-wrap: wrap;
 }
 
 .service-item {
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: center;
   gap: 12px;
   background-color: rgb(154, 156, 156, 0.1);
-  padding: 24px;
+  padding: 16px;
   border-radius: 12px;
-  display: flex;
+}
+
+.service-icon{
+  align-self: flex-start;
 }
 
 .service-icon > h3 {
@@ -175,7 +179,7 @@ button {
 }
 
 .details h4 {
-  margin-top: 8px;
+  margin-top: -8px;
   font-size: 16px;
   margin-bottom: -10px;
 }
@@ -191,7 +195,7 @@ button {
   color: white;
 }
 
-.container-testimonial {
+.testimonial-container {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -200,21 +204,21 @@ button {
   margin: 0 auto;
 }
 
-.container-testimonial .testi-item {
+.testimonial-container .testi-item {
   font-size: 18px;
   color: #ffffff;
   font-style: italic;
   text-align: center;
 }
 
-.container-testimonial .testi-profile {
+.testimonial-container .testi-profile {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
 
-.container-testimonial .testi-profile .avatar {
+.testimonial-container .testi-profile .avatar {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -293,6 +297,7 @@ button {
 
 .text-callus p {
   line-height: 24px;
+  text-align: justify;
 }
 
 .callus-item img {
@@ -306,4 +311,56 @@ footer {
   padding: 12px 24px;
   margin-top: 24px;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .main-header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav{
+    margin-top: 20px;
+  }
+
+  .main-content-header{
+    padding: 0 16px;
+  }
+
+  .main-container{
+    flex-direction: column;
+    padding: 0 4px;
+  }
+
+  .banner-img{
+    height: 280px;
+  }
+
+  .form{
+    padding: 16px;
+  }
+
+  .service-container{
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .testi-section{
+    padding: 16px;
+  }
+
+  .package-container{
+    flex-direction: column;
+  }
+
+  .callus-container{
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .callus-button{
+    width: 100%;
+  }
 }

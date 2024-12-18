@@ -1,5 +1,17 @@
 // Ini Javascript
 
+// Navigation
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", function() {
+    // Menghapus class 'active' untuk nav link
+    navLinks.forEach(navLink => navLink.classList.remove("active"));
+    // Menambah class 'active' untuk nav link yang diklik
+    this.classList.add("active");
+  });
+});
+
 // Autoslider
 document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
